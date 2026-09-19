@@ -1,8 +1,10 @@
+import './CampoTexto.css'
+
 function CampoTexto({ label, name, ...inputProps }) {
     return(
-        <div>
+        <div className="campo-texto">
             <label htmlFor={name}>{label}</label>
-            <input id="name" name="name" {...inputProps} />
+            <input id={name} name={name} {...inputProps} />
         </div>
     )
 };

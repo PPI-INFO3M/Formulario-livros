@@ -25,45 +25,47 @@ function FormularioLivro() {
 
     return(
         <section className="sec-formulario">
-            <h1>Cadastro de livro</h1>
+            <div className="ctn-forms">
+                <div className="form-title">
+                    <span className="material-symbols-outlined">menu_book</span>
+                    <h1>Cadastro de livro</h1>
+                </div>
+                <form onSubmit={handleSubmit}>
+                    <CampoTexto
+                        label="Titulo"
+                        name="titulo"
+                        value={titulo}
+                        onChange={(evento) => setTitulo(evento.target.value)}
+                        placeholder="Ex: Harry Potter"
+                    />
+                    <CampoTexto
+                        label="Autor"
+                        name="autor"
+                        value={autor}
+                        onChange={(evento) => setAutor(evento.target.value)}
+                        placeholder="Ex: J.K Rowling"
+                    />
+                    <div className="dividir-linha">
+                        <CampoTexto
+                            label="Ano de Publicação"
+                            name="anoPublicado"
+                            value={anoPublicado}
+                            onChange={(evento) => setAnoPublicado(evento.target.value)}
+                            placeholder="Ex: 2004"
+                        />
+                        <CampoTexto
+                            label="Gênero"
+                            name="genero"
+                            value={genero}
+                            onChange={(evento) => setGenero(evento.target.value)}
+                            placeholder="Ex: Aventura"
+                        />
+                    </div>
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
 
-            <form onSubmit={handleSubmit}>
-                <CampoTexto
-                    label="Titulo"
-                    name="titulo"
-                    value={titulo}
-                    onChange={(evento) => setTitulo(evento.target.value)}
-                    placeholder="Ex: Harry Potter"
-                />
-
-                <CampoTexto
-                    label="Autor"
-                    name="autor"
-                    value={autor}
-                    onChange={(evento) => setAutor(evento.target.value)}
-                    placeholder="Ex: J.K Rowling"
-                />
-
-                <CampoTexto
-                    label="Ano de Publicação"
-                    name="anoPublicado"
-                    value={anoPublicado}
-                    onChange={(evento) => setAnoPublicado(evento.target.value)}
-                    placeholder="Ex: 2004"
-                />
-
-                <CampoTexto
-                    label="Gênero"
-                    name="genero"
-                    value={genero}
-                    onChange={(evento) => setGenero(evento.target.value)}
-                    placeholder="Ex: Aventura"
-                />
-
-                <button type="submit">Cadastrar</button>
-            </form>
-
-            <div>
+            <div className="ctn-livros">
                 <h2>Livros Cadastrados</h2>
                 {livros.length === 0 && <p>Nenhum livro cadastrado...</p>}
                 <ul>

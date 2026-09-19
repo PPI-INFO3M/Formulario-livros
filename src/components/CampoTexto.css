@@ -1,0 +1,32 @@
+.campo-texto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 calc(50% - 10px);
+}
+
+label {
+    font-size: var(--font-sm);
+    font-weight: 800;
+    color: var(--text-muted);
+}
+
+input {
+    width: 100%;
+    background-color: var(--bg-surface-subtle);
+    border: none;
+    border-radius: var(--radius-md);
+    padding: 12px 12px;
+    font-size: var(--font-sm);
+    color: var(--text-muted);
+    box-shadow: var(--shadow-input);
+    transform: var(--transition-fast);
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid;
+    border-color: var(--border-focus);
+    box-shadow: var(--shadow-focus);
+    transform: var(--transition-fast);
+}

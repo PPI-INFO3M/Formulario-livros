@@ -1,3 +1,105 @@
+/* 1. Importação da Fonte Inter do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* =========================================
+     TIPOGRAFIA E FAMÍLIA DE FONTES
+     ========================================= */
+  --font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Tamanhos de Fonte */
+  --font-xs: 0.75rem;                /* 12px - tags e meta informações */
+  --font-sm: 0.875rem;               /* 14px - labels, inputs e botões */
+  --font-base: 1rem;                 /* 16px - corpo de texto padrão */
+  --font-lg: 1.125rem;               /* 18px - títulos de cards */
+  --font-xl: 1.35rem;                /* 21.6px - subtítulos de seção */
+  --font-2xl: 1.75rem;               /* 28px - título "Cadastro de livro" */
+
+  /* Pesos de Fonte */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* =========================================
+     CORES DE FUNDO E SUPERFÍCIES
+     ========================================= */
+  --bg-page: #f7f9fc;                /* Fundo suave acinzentado da página */
+  --bg-surface: #ffffff;             /* Fundo branco dos cards e formulário */
+  --bg-surface-subtle: #f9fafb;      /* Fundo suave de inputs */
+  --border-light: #eaecf0;           /* Bordas suaves dos cards */
+  --border-input: #d0d5dd;           /* Bordas dos campos de texto */
+  --border-focus: #7c5cfc;           /* Borda do input ao focar */
+
+  /* =========================================
+     CORES DE DESTAQUE (PURPLE / VIOLETA)
+     ========================================= */
+  --brand-primary: #6c5ce7;          /* Roxo principal dos botões e ícones */
+  --brand-hover: #5844e3;            /* Roxo escuro ao passar o mouse */
+  --brand-active: #4834d4;           /* Roxo ao clicar */
+  --brand-light: #f3f0ff;            /* Fundo suave dos badges/tags roxos */
+  --brand-border: #ded7fc;           /* Borda suave das tags */
+  --brand-icon-bg: #eee9fe;          /* Fundo circular do ícone do livro */
+
+  /* =========================================
+     CORES DE TEXTO
+     ========================================= */
+  --text-main: #101828;              /* Títulos e textos de alto contraste */
+  --text-body: #475467;              /* Textos explicativos e subtítulos */
+  --text-muted: #667085;             /* Labels secundários e placeholders */
+  --text-placeholder: #98a2b3;       /* Placeholder dos inputs */
+  --text-on-brand: #ffffff;          /* Texto sobre o botão roxo */
+
+  /* =========================================
+     ESPAÇAMENTOS (SPACING SCALE)
+     ========================================= */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  /* =========================================
+     BORDAS ARREDONDADAS (RADIUS)
+     ========================================= */
+  --radius-sm: 6px;                  /* Tags pequenas */
+  --radius-md: 8px;                  /* Inputs normais */
+  --radius-lg: 12px;                 /* Botão principal e cards */
+  --radius-xl: 16px;                 /* Card central do formulário */
+  --radius-full: 9999px;             /* Badges circulares/pílula */
+
+  /* =========================================
+     ELEVAÇÕES E SOMBRAS (SHADOWS)
+     ========================================= */
+  --shadow-input: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+  --shadow-focus: 0 0 0 4px rgba(108, 92, 231, 0.15);
+  --shadow-card: 0 12px 32px -4px rgba(16, 24, 40, 0.06), 0 4px 12px -2px rgba(16, 24, 40, 0.03);
+  --shadow-btn: 0 8px 16px -2px rgba(108, 92, 231, 0.35);
+  --shadow-btn-hover: 0 10px 20px -2px rgba(108, 92, 231, 0.45);
+
+  --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* =========================================
+   CONFIGURAÇÃO GERAL E APLICAÇÃO DA FONTE
+   ========================================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
 body {
-    background-color: ;
+  background-color: var(--bg-page);
+  color: var(--text-body);
+  font-family: var(--font-family);
+  font-size: var(--font-base);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

@@ -1,0 +1,96 @@
+.sec-formulario {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    padding-top: 40px;
+}
+
+/* 
+ * =======================
+ * === CONTAINER FORMS ===
+ * =======================
+ */
+
+.ctn-forms {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--bg-surface);
+    padding: 40px 40px;
+    border-radius: var(--radius-xl);
+    gap: 20px;
+    width: 60%;
+    box-shadow: var(--shadow-card);
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.form-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.form-title .material-symbols-outlined {
+    background-color: var(--brand-primary);
+    font-size: 28px;
+    border-radius: 100%;
+    background-color: var(--brand-icon-bg);
+    padding: 8px;
+}
+
+.form-title h1 {
+    color: var(--text-main);
+    font-size: var(--font-2xl);
+}
+
+.dividir-linha {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    flex: 1 1 calc(50% - 10px);
+}
+
+button {
+    padding: 12px 0 ;
+    background-color: var(--brand-primary);
+    color: var(--text-on-brand);
+    font-size: var(--font-sm);
+    font-weight: 100;
+    text-decoration: none;
+    border: none;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-btn);
+    transition: var(--transition-fast);
+    margin-top: 16px;
+}
+
+button:hover {
+    box-shadow: var(--shadow-btn-hover);
+    transform: translateY(2px);
+    background-color: var(--brand-hover);
+}
+
+/* 
+ * ========================
+ * === CONTAINER LIVROS ===
+ * ========================
+ */
+
+.ctn-livros {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}

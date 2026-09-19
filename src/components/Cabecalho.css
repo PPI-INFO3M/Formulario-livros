@@ -1,0 +1,29 @@
+nav {
+    padding: 12px;
+}
+
+header {
+    border-bottom: 1px solid var(--border-light);
+}
+
+.link-inicio {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    color: var(--text-body);
+    transition: var(--transition-fast);
+    font-size: var(--font-sm);
+    font-weight: 400;
+}
+
+.material-symbols-outlined {
+    color: var(--brand-primary);
+    font-size: var(--font-base);
+}
+
+a:hover {
+    color: var(--brand-hover);
+    transform: translateY(2px);
+}
