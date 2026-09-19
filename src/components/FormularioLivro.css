@@ -93,4 +93,16 @@ button:hover {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    padding: 20px 40px;
+}
+
+.ctn-livros h2 {
+    color: var(--text-main);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
 }

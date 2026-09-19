@@ -1,0 +1,53 @@
+.card-livro {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-color: var(--bg-surface);
+    box-shadow: var(--shadow-card);
+    border-radius: var(--radius-lg);
+    padding: 12px 20px;
+    width: 240px;
+    gap: 12px;
+}
+
+.card-livro strong {
+    font-size: var(--font-bse);
+    color: var(--text-main);
+}
+
+.card-livro p {
+    font-size: var(--font-sm);
+    color: var(--text-muted);
+}
+
+.livro-top {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.livro-top p {
+    font-weight: var(--weight-regular);
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--brand-light);
+    padding: 2px 8px;
+    border-radius: var(--radius-xl);
+    color: var(--brand-primary);
+    font-weight: var(--weight-semibold);
+    font-size: var(--font-xs);
+}
+
+.tag p {
+    color: var(--brand-primary);
+}
+
+.tags {
+    display: flex;
+    gap: 12px;
+}
