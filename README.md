@@ -15,7 +15,7 @@ Pré-requisito: ter o [Node.js](https://nodejs.org) instalado (para verificar, a
 1. **Baixe o projeto**
    - Opção A (com Git instalado): abra o Prompt de Comando na pasta onde quer salvar o projeto e rode:
 ```
-     git clone https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git
+     git clone https://github.com/PPI-INFO3M/Formulario-livros
 ```
    - Opção B (sem Git): na página do repositório, clique em **Code > Download ZIP** e extraia a pasta.
 2. **Abra a pasta do projeto no terminal**
