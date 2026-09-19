@@ -8,8 +8,6 @@ no projeto de cadastro de alunos visto em aula.
  
 <img width="1919" height="913" alt="image" src="https://github.com/user-attachments/assets/5e2bdd34-6cd6-460f-8a8e-dab80d2196ed" />
  
-![Tela de cadastro de livro](./assets/print.png)
- 
 ## Como rodar o projeto (Windows)
  
 Pré-requisito: ter o [Node.js](https://nodejs.org) instalado (para verificar, abra o **Prompt de Comando** e digite `node -v`).
