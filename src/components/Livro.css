@@ -1,13 +1,14 @@
 .card-livro {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
     background-color: var(--bg-surface);
     box-shadow: var(--shadow-card);
     border-radius: var(--radius-lg);
     padding: 12px 20px;
-    width: 240px;
+    width: 320px;
     gap: 12px;
 }
 

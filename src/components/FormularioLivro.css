@@ -93,11 +93,12 @@ button:hover {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 20px 40px;
+    padding: 20px 60px;
 }
 
 .ctn-livros h2 {
     color: var(--text-main);
+    margin: 20px 0;
 }
 
 ul {

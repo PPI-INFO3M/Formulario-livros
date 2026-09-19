@@ -1,20 +1,20 @@
 import './Livro.css'
 
-function Livro({ livro }) {
+function Livro(props) {
     return (
         <li className="card-livro">
             <div className="livro-top">
-                <strong>{livro.titulo}</strong>
-                <p>{livro.autor}</p>
+                <strong>{props.livro.titulo}</strong>
+                <p>{props.livro.autor}</p>
             </div>
             <div className="tags">
                 <div className="tag">
                     <span className="material-symbols-outlined">calendar_month</span>
-                    <p>{livro.anoPublicado}</p>
+                    <p>{props.livro.anoPublicado}</p>
                 </div>
                 <div className="tag">
                     <span className="material-symbols-outlined">sell</span>
-                    <p className="tag">{livro.genero}</p>
+                    <p className="tag">{props.livro.genero}</p>
                 </div>
             </div>
         </li>

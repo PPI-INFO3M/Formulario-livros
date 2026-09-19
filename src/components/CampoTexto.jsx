@@ -1,10 +1,17 @@
 import './CampoTexto.css'
 
-function CampoTexto({ label, name, ...inputProps }) {
+function CampoTexto(props) {
     return(
         <div className="campo-texto">
-            <label htmlFor={name}>{label}</label>
-            <input id={name} name={name} {...inputProps} />
+            <label htmlFor={props.name}>{props.label}</label>
+            <input 
+                id={props.name} 
+                name={props.name}
+                type={props.type}
+                value={props.value}
+                onChange={props.onChange}
+                placeholder={props.placeholder}
+            />
         </div>
     )
 };
